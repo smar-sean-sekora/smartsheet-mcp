@@ -7,7 +7,7 @@
     "smartsheet": "./dist/index.js"
   },
   "files": [
-    "dist"
+    "src"
   ],
   "scripts": {
     "build": "tsc && mcp-build",
