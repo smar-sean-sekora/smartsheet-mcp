@@ -1,12 +1,3 @@
 node_modules/
-dist/index.js
-dist/apis/smartsheet-api.js
-dist/apis/smartsheet-discussion-api.js
-dist/apis/smartsheet-folder-api.js
-dist/apis/smartsheet-search-api.js
-dist/apis/smartsheet-sheet-api.js
-dist/apis/smartsheet-user-api.js
-dist/apis/smartsheet-workspace-api.js
-dist/tools/GetMyTasksTool.js
-dist/tools/GetSheetByUrlTool.js
+dist/
 src/.DS_Store
