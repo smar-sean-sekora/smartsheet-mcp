@@ -1,5 +1,5 @@
-import { Sheet } from "../types/index.js";
-import { SmartsheetAPI } from "./smartsheet-api.js";
+import { Sheet } from "../types/index";
+import { SmartsheetAPI } from "./smartsheet-api";
 
 /**
  * Sheet-specific API methods for Smartsheet

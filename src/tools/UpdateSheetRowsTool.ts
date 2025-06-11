@@ -1,6 +1,6 @@
 import { MCPTool } from "mcp-framework";
 import { z } from "zod";
-import { SmartsheetAPI } from "../apis/smartsheet-api.js";
+import { SmartsheetAPI } from "../apis/smartsheet-api";
 
 interface UpdateSheetRowsInput {
   sheetId: string;

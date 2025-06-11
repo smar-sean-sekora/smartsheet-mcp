@@ -10,9 +10,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
-    "start": "tsx src/index.ts",
-    "dev": "tsx watch src/index.ts",
+    "build": "tsc && mcp-build",
+    "watch": "tsc --watch",
+    "start": "tsc && mcp-build && node dist/index.js",
     "test": "vitest",
     "test:run": "vitest run"
   },

@@ -1,4 +1,4 @@
-import { SmartsheetAPI } from "./smartsheet-api.js";
+import { SmartsheetAPI } from "./smartsheet-api";
 
 export class SmartsheetDiscussionAPI {
   private api: SmartsheetAPI;
