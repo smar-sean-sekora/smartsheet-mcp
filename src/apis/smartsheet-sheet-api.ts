@@ -1,3 +1,4 @@
+import { Sheet } from "../types/index.js";
 import { SmartsheetAPI } from "./smartsheet-api.js";
 
 /**
@@ -16,7 +17,7 @@ export class SmartsheetSheetAPI {
    * @param include Optional comma-separated list of elements to include
    * @returns Sheet data
    */
-  async getSheet(sheetId: string, include?: string, exclude?: string, pageSize?: number, page?: number): Promise<any> {
+  async getSheet(sheetId: string, include?: string, exclude?: string, pageSize?: number, page?: number): Promise<Sheet> {
     return this.api.request('GET', `/sheets/${sheetId}`, undefined, { include, exclude, pageSize, page });
   }
 
@@ -26,7 +27,7 @@ export class SmartsheetSheetAPI {
    * @param include Optional comma-separated list of elements to include
    * @returns Sheet data
    */
-  async getSheetByDirectIdToken(directIdToken: string, include?: string, exclude?: string, pageSize?: number, page?: number): Promise<any> {
+  async getSheetByDirectIdToken(directIdToken: string, include?: string, exclude?: string, pageSize?: number, page?: number): Promise<Sheet> {
     return this.api.request('GET', `/sheets/${directIdToken}`, undefined, { include, exclude, pageSize, page });
   }
   
