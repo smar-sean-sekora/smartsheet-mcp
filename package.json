@@ -10,9 +10,9 @@
     "src"
   ],
   "scripts": {
-    "build": "tsc && mcp-build",
+    "build": "tsup src/index.ts --format esm --dts --out-dir dist --clean && mcp-build",
     "watch": "tsc --watch",
-    "start": "tsc && mcp-build && node dist/index.js",
+    "start": "npm run build && node dist/index.js",
     "test": "vitest",
     "test:run": "vitest run"
   },
